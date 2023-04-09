@@ -1,0 +1,52 @@
+.service {
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: grid;
+  grid-template-areas:
+  'avatar present price'
+  '. . review';
+  gap: 20px 24px;
+
+  grid-template-columns: 50px 1fr max-content;
+
+
+  &__avatar {
+    grid-area: avatar;
+  }
+
+  &__present {
+    grid-area: present;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    font-weight: 300;
+  }
+
+  &__price {
+    grid-area: price;
+    font-size: 24px;
+    text-align: right;
+  }
+
+  &__review {
+    grid-area: review;
+    display: flex;
+  }
+
+  &__stars {
+    display: flex;
+    gap: 2px;
+    margin-right: 16px;
+  }
+
+  &__count-review {
+    padding: 18px;
+    background: url("../img/chat.svg") left/14px no-repeat;
+  }
+}
