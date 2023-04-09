@@ -1,5 +1,36 @@
 $back: #F2F5FC;
-$text: #000000;
+$text: #000;
+
+
+
+@mixin laptop {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 520px) {
+    @content;
+  }
+}
+
+
+@mixin mini {
+  @media (max-width: 360px) {
+    @content;
+  }
+}
+
+
+
+
 
 
 

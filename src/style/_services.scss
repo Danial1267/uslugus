@@ -1,21 +1,26 @@
 .services {
   padding: 25px 0;
 
+  @include tablet {
+    padding-top: 5px;
+  }
 
   &__container {
     display: flex;
-    gap: 20px;
+    gap: 30px 20px;
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
-  &__category {
-    flex: 0 0 180px;
-  }
 
   &__list {
-    flex: 1 1 100%;
+    flex: 1 1 100%
   }
 
-  &__item:not(:last-child){
+  &__item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
+

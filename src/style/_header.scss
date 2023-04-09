@@ -1,38 +1,68 @@
 .header {
-
-  padding: 25px 0;
+  padding: 26px 0 25px;
 
   &__container {
     display: flex;
     align-items: center;
+    gap: 20px 30px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
   &__logo {
-    margin-right: 88px;
+    margin-right: 58px;
+
+    @include laptop {
+      margin-right: 38px;
+    }
+
+    @include tablet {
+      margin-right: 0;
+    }
+
   }
 
   &__search {
     margin-right: auto;
-  }
 
+    @include tablet {
+      order: 1;
+    }
+  }
 
   &__auth {
     display: flex;
     gap: 40px;
+
+    @include laptop {
+      gap: 30px;
+    }
   }
 
   &__auth-btn {
     display: flex;
     align-items: center;
     gap: 4px;
-    transition: color 0.2s ease-in-out;
+    transition: color .2s ease-in-out;
 
-    &:hover{
-      color: #E5C207;
+    &:hover {
+      color: #E5C207
     }
 
-    &:active{
+    &:active {
       color: #FFD600;
     }
+
+    @include mobile {
+      font-size: 0;
+      gap: 0;
+    }
   }
+
+
 }
+
+

@@ -1,11 +1,30 @@
-.category{
+.category {
+  position: relative;
+
   &__title {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 24px;
+    width: 180px;
+    position: relative;
+    z-index: 5;
   }
 
+  &__list {
+    padding-top: 24px;
+
+    @include tablet {
+      display: none;
+      position: absolute;
+      z-index: 3;
+      top: -16px;
+      left: -16px;
+      background: #FFFFFF;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      padding: 60px 12px 16px 16px;
+    }
+  }
 
   &__item {
     margin-bottom: 10px;
@@ -20,35 +39,39 @@
     text-align: left;
 
     &_photographer {
-      background-image: url("../img/photographer.svg");
+      background-image: url('../img/photographer.svg');
     }
 
     &_makeup {
-      background-image: url("../img/makeup.svg");
+      background-image: url('../img/makeup.svg');
     }
 
     &_masseur {
-      background-image: url("../img/masseur.svg");
+      background-image: url('../img/masseur.svg');
     }
 
     &_handyman {
-      background-image: url("../img/handyman.svg");
+      background-image: url('../img/handyman.svg');
     }
 
     &_cosmetologist {
-      background-image: url("../img/cosmetologist.svg");
+      background-image: url('../img/cosmetologist.svg');
     }
 
     &_electrician {
-      background-image: url("../img/electrician.svg");
+      background-image: url('../img/electrician.svg');
     }
 
     &_manicurist {
-      background-image: url("../img/manicurist.svg");
+      background-image: url('../img/manicurist.svg');
     }
 
     &_plumber {
-      background-image: url("../img/plumber.svg");
+      background-image: url('../img/plumber.svg');
     }
   }
+
+
+
 }
+

@@ -1,10 +1,21 @@
-@import '~normalize.css';
+@import "~normalize.css";
 @import 'style/fonts';
 @import 'style/var';
 @import 'style/style';
 @import 'style/header';
-@import 'style/seacrh';
-@import 'style/service';
+@import 'style/search';
 @import 'style/services';
+@import 'style/service';
+@import 'style/stars';
 @import 'style/category';
+@import 'style/footer';
 @import 'style/modal';
+@import 'style/person';
+@import 'style/about';
+@import 'style/review';
+@import 'style/form';
+@import 'style/avatar';
+@import 'style/choices';
+@import 'style/rating';
+@import 'style/auth';
+
