@@ -1,4 +1,4 @@
-export const API_URL ='https://intelligent-perfect-halloumi.glitch.me';
+export const API_URL ='https://uslugus-api-service.glitch.me/';
 
 export const directions = {
 	from: 'от',
